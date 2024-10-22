@@ -1,17 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Canvas Chrome Extension",
+  "name": "TabWise",
   "version": "1.0",
-  "description": "Track changes in Canvas since your last login and manage your tasks efficiently.",
+  "description": "AI-Powered Study Organizer for efficient tab management",
   "permissions": [
-    "identity",
-    "storage"
+    "tabs",
+    "storage",
+    "scripting"
   ],
   "host_permissions": [
-    "*://canvas.instructure.com/*"
+    "<all_urls>"
   ],
   "background": {
-    "service_worker": "background/background.js"
+    "service_worker": "background/background.js",
+    "type": "module"
   },
   "action": {
     "default_popup": "popup/popup.html",
@@ -26,10 +28,8 @@
     "48": "assets/icon48.png",
     "128": "assets/icon128.png"
   },
-  "content_scripts": [
-    {
-      "matches": ["*://canvas.instructure.com/*"],
-      "js": ["content/content.js"]
-    }
-  ]
+  "web_accessible_resources": [{
+    "resources": ["dashboard/*", "assets/*"],
+    "matches": ["<all_urls>"]
+  }]
 }

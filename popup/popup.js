@@ -1,17 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    chrome.runtime.sendMessage({action: 'fetchCanvasData'});
-    loadCourses();
-  });
+  const openDashboardButton = document.getElementById('open-dashboard');
   
-  function loadCourses() {
-    chrome.storage.local.get(['courses'], function(result) {
-      const courses = result.courses || [];
-      const coursesList = document.getElementById('coursesList');
-      coursesList.innerHTML = '';
-      courses.forEach(course => {
-        const li = document.createElement('li');
-        li.textContent = course.name;
-        coursesList.appendChild(li);
-      });
-    });
-  }
+  openDashboardButton.addEventListener('click', function() {
+      chrome.runtime.sendMessage({ action: 'openDashboard' });
+      window.close();
+  });
+});

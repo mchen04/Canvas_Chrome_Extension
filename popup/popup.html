@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas Chrome Extension</title>
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <div id="app">
-        <h1>Canvas Chrome Extension</h1>
-        <div id="courses">
-            <h2>Your Courses</h2>
-            <ul id="coursesList"></ul>
-        </div>
+    <div id="popup-content">
+        <h1>Welcome to TabWise!</h1>
+        
+        <p>TabWise is your AI-powered study organizer, designed to help you manage
+        your browser tabs efficiently.</p>
+        
+        <ul>
+            <li>AI-powered tab summarization</li>
+            <li>Custom categories for organization</li>
+            <li>Smart sorting and grouping</li>
+        </ul>
+        
+        <button id="open-dashboard">Open Dashboard</button>
+        
+        <p class="thank-you">Thank you for using TabWise!</p>
     </div>
     <script src="popup.js"></script>
 </body>

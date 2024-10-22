@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TabWise Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="assets/icon128.png" alt="TabWise Logo">
+                <h2>TabWise</h2>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search tabs...">
+                <i class="fas fa-search"></i>
+            </div>
+            
+            <nav class="categories" id="categories">
+                <!-- Categories will be populated here -->
+            </nav>
+            
+            <div class="settings">
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="color-coding">
+                        Color Coding
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="layout-toggle">
+                        List View
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header">
+                <h1>Your Study Tabs</h1>
+                <div class="view-controls">
+                    <button id="new-category">New Category</button>
+                    <button id="export-tabs">Export</button>
+                </div>
+            </div>
+
+            <div id="dashboard-container" class="grid-layout">
+                <!-- Tabs will be populated here -->
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
