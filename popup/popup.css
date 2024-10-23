@@ -1,55 +1,74 @@
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --bg-color: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --accent-color: #ff6b35;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     width: 300px;
     padding: 15px;
-}
-
-#popup-content {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  #popup-content {
     text-align: center;
-}
-
-h1 {
-    color: #4a4a4a;
+  }
+  
+  h1 {
+    color: var(--text-primary);
     margin-bottom: 15px;
-}
-
-p {
-    color: #666;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  p {
+    color: var(--text-secondary);
     line-height: 1.4;
-}
-
-ul {
+    font-size: 14px;
+  }
+  
+  ul {
     text-align: left;
     padding-left: 20px;
     margin: 15px 0;
-}
-
-li {
+  }
+  
+  li {
     margin-bottom: 8px;
-    color: #555;
-}
-
-button {
-    background-color: #4CAF50;
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: var(--accent-color);
     border: none;
     color: white;
-    padding: 12px 24px;
+    padding: 6px 12px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #ff824d;
+  }
 
-button:hover {
-    background-color: #45a049;
-}
-
-.thank-you {
+  footer {
+    margin-top: 10px;
+  }
+  
+  .thank-you {
     margin-top: 15px;
     font-style: italic;
-    color: #888;
-}
+    color: var(--text-secondary);
+    font-size: 12px;
+  }

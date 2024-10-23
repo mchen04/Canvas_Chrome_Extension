@@ -8,36 +8,47 @@
 <body>
     <div class="dashboard-wrapper">
         <!-- Sidebar Navigation -->
-        <aside class="sidebar">
+        <div class="sidebar">
             <div class="logo">
-                <img src="assets/icon128.png" alt="TabWise Logo">
-                <h2>TabWise</h2>
+              <img src="assets/icon128.png" alt="TabWise Logo">
+              <h2>TabWise</h2>
             </div>
-            
+          
             <div class="search-container">
-                <input type="text" id="search-input" placeholder="Search tabs...">
-                <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search tabs...">
             </div>
-            
-            <nav class="categories" id="categories">
-                <!-- Categories will be populated here -->
-            </nav>
-            
+          
+            <div class="categories">
+              <button class="category-btn active">
+                <span class="category-label">All Tabs</span>
+              </button>
+              
+              <button class="category-btn">
+                <span class="category-label">Research</span>
+              </button>
+              
+              <button class="category-btn">
+                <span class="category-label">Assignments</span>
+              </button>
+              
+              <button class="category-btn">
+                <span class="category-label">Lecture Notes</span>
+              </button>
+              
+              <button class="category-btn">
+                <span class="category-label">Miscellaneous</span>
+              </button>
+            </div>
+          
             <div class="settings">
-                <div class="setting-item">
-                    <label>
-                        <input type="checkbox" id="color-coding">
-                        Color Coding
-                    </label>
-                </div>
-                <div class="setting-item">
-                    <label>
-                        <input type="checkbox" id="layout-toggle">
-                        List View
-                    </label>
-                </div>
+              <div class="setting-item">
+                <span class="category-label">Color Coding</span>
+              </div>
+              <div class="setting-item">
+                <span class="category-label">List View</span>
+              </div>
             </div>
-        </aside>
+          </div>
 
         <!-- Main Content -->
         <main class="main-content">

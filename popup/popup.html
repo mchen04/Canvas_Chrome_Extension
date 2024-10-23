@@ -5,21 +5,44 @@
 </head>
 <body>
     <div id="popup-content">
-        <h1>Welcome to TabWise!</h1>
-        
-        <p>TabWise is your AI-powered study organizer, designed to help you manage
-        your browser tabs efficiently.</p>
-        
-        <ul>
-            <li>AI-powered tab summarization</li>
-            <li>Custom categories for organization</li>
-            <li>Smart sorting and grouping</li>
+        <div class="popup-header">
+          <img src="assets/icon128.png" alt="TabWise Logo">
+          <h1>Welcome to TabWise!</h1>
+        </div>
+      
+        <div class="description">
+          <p>TabWise is your AI-powered study organizer, designed to help you manage 
+          your browser tabs efficiently.</p>
+        </div>
+      
+        <ul class="feature-list">
+          <li class="feature-card">
+            <div class="feature-content">
+              <p class="feature-text">AI-powered tab summarization</p>
+            </div>
+          </li>
+      
+          <li class="feature-card">
+            <div class="feature-content">
+              <p class="feature-text">Custom categories for organization</p>
+            </div>
+          </li>
+      
+          <li class="feature-card">
+            <div class="feature-content">
+              <p class="feature-text">Smart sorting and grouping</p>
+            </div>
+          </li>
         </ul>
-        
-        <button id="open-dashboard">Open Dashboard</button>
-        
-        <p class="thank-you">Thank you for using TabWise!</p>
-    </div>
+      
+        <div class="action-container">
+          <button id="open-dashboard" class="open-dashboard-btn">Open Dashboard</button>
+        </div>
+      
+        <div class="footer">
+          Thank you for using TabWise!
+        </div>
+      </div>
     <script src="popup.js"></script>
 </body>
 </html>
